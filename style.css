@@ -3,7 +3,7 @@
 
 :root {
     --bgc-blue: rgb(224, 232, 255);
-    --btn-blue: hsl(245, 75%, 52%);
+    --btn-blue: rgb(56, 41, 224);
     --very-pale-blue: hsl(225, 100%, 98%);
     --desaturated-blue: hsl(224, 23%, 55%);
     --dark-blue: hsl(223, 47%, 23%);
@@ -16,7 +16,6 @@
 }
 
 body {
-    font-family: 'Red Hat Display', sans-serif;
     background-color: var(--bgc-blue);
     display: flex;
     justify-content: space-around;
@@ -28,12 +27,15 @@ body {
     background-size: contain;
     width: 100vw;
     height: 100vh;
+}
 
+html {
+    font-family: 'Red Hat Display', sans-serif;
 }
 
 .wrapper {
-    width: 80%;
-    height: 70%;
+    width: 325px;
+    height: 630px;
     background-color: var(--very-pale-blue);
     overflow: hidden;
     border-radius: 15px;
@@ -67,9 +69,9 @@ img.image {
 }
 
 .plan {
-    width: 90%;
+    width: 270px;
     height: 70px;
-    background-color: rgb(224, 232, 255);
+    background-color: rgb(238, 242, 254);
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -86,7 +88,7 @@ img.image {
 }
 
 .plan-price p:nth-child(1) {
-    font-size: 18px;
+    font-size: 16px;
     color: var(--dark-blue);
     font-weight: 700;
     padding: 2px 0;
@@ -108,4 +110,42 @@ img.image {
 .plan p.change:hover {
     color: var(--dark-blue);
     text-decoration: none;
+}
+
+.proceed {
+    display: block;
+    background-color: var(--btn-blue);
+    width: 270px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0px 8px 20px rgba(56, 41, 224, 0.5);
+    margin-bottom: 15px;
+    margin-top: 10px;
+    color: #fff;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.proceed:hover {
+    background-color: var(--desaturated-blue);
+}
+
+.cancel {
+    width: 270px;
+    height: 50px;
+    border-style: none;
+    background-color: transparent;
+    font-weight: 700;
+    color: var(--desaturated-blue);
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.cancel:hover {
+    color: var(--dark-blue)
+}
+
+.attribution {
+    font-size: 10px;
 }
